@@ -1,25 +1,43 @@
+/*--VARIABLES--*/
+
+:root {
+    --navyblue : #2E2F42;
+    --white : #FFF;
+    --iris : #4D5AE5;
+    --slate : #434455;
+    --cloud : #F4F4FD;
+    --cornflower : #E7E9FC;
+    --ocean : #404BBF;
+    --black-a-015 : rgba(0, 0, 0, 0.15);
+    --black-a-012 : rgba(0, 0, 0, 0.12);
+    --black-a-008 : rgba(0, 0, 0, 0.08);
+    --black-a-010 : rgba(0, 0, 0, 0.10);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background: #FFF;
-    color: var(--navyblue, #2E2F42);
+    background: var(--white);
+    color: var(--navyblue);
 }
 /*--HEADER--*/
 .logo {
     text-decoration: none;
 }
 .logo-web {
-    color: #4D5AE5;
+    color: var(--iris);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    font-style: normal;
     font-weight: 800;
     line-height: 1.167;
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
 .logo-studio{
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    font-style: normal;
     font-weight: 800;
     line-height: 1.167;
     letter-spacing: 0.54px;
@@ -27,6 +45,7 @@ body {
 }
 .nav-list {
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
 }
@@ -35,26 +54,34 @@ body {
 }
 .nav-menu a{
     text-decoration: none;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
+}
+.nav-menu a:hover {
+    text-decoration: underline;
 }
 .address {
     list-style-type: none;
 }
 .address a {
     text-decoration: none;
-    color: var(--navyblue, #2E2F42);
+    color: var(--slate);
+    font-style: normal;
+}
+.address a:hover {
+    text-decoration: underline;
 }
 /*--BODY--*/
 .hero-section {
-    background: var(--navyblue, #2E2F42);
+    background: var(--navyblue);
     text-align: center;
     justify-content: center;
 }
 .hero-title {
     line-height: 1.07;
-    color: var(--white, #FFF);
+    color: var(--white);
     text-align: center;
     font-size: 56px;
+    font-style: normal;
     font-weight: 700;
     letter-spacing: 1.12px;
     width: 550px;
@@ -62,29 +89,44 @@ body {
     margin: auto;
 }
 .order-service-btn {
-    color: #FFF;
+    color: var(--white);
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
     gap: 10px;
     border-radius: 4px;
-    background: var(--iris, #4D5AE5);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: var(--iris);
+    box-shadow: 0px 4px 4px 0px var(--black-a-015);
     cursor: pointer;
+}
+.order-service-btn:hover {
+    background: var(--cloud);
+    color: var(--iris);
 }
 /*--feature section--*/
 .features-list{
     width: 264px;
+    list-style-type: none;
+}
+.feature-title {
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    list-style-type: none;
+}
+.feature-content {
+    color : var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
 }
 /*--What are we doing section--*/
 .what-are-we-doing-header {
     font-size: 36px;
+    font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.72px;
@@ -93,18 +135,19 @@ body {
 .what-are-we-doing-ul {
     list-style-type: none;
 }
-.what-are-we-doing-li img {
+.what-are-we-doing-img {
     width: 360px;
     height: 300px;
-    border: 1px solid var(--cornflower, #E7E9FC);
+    border: 1px solid var(--cornflower);
 }
 /*--Our team section--*/
 .team-section {
-    background: var(--cloud, #F4F4FD);
+    background: var(--cloud);
 }
 .team-header {
     text-align: center;
     font-size: 36px;
+    font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.72px;
@@ -113,57 +156,58 @@ body {
 .team-ul {
     list-style-type: none;
 }
-.member-li img{
+.member-img{
     width: 264px;
     height: 260px;
 }
 .member-name {
     text-align: center;
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
     margin: 0;
 }
 .member-role {
-    color: var(--slate, #434455);
+    color: var(--slate);
     text-align: center;
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
     margin: 0;
 }
 /*--Footer Section--*/
 .footer-logo-web{
-    color: #4D5AE5;
+    color: var(--iris);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    font-style: normal;
     font-weight: 800;
     line-height: 1.167;
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
 .footer-logo-studio {
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    font-style: normal;
     font-weight: 800;
     line-height: 1.167;
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
 .footer-container {
-    background: var(--navyblue, #2E2F42);
+    background: var(--navyblue);
 }
 .footer-container a {
     text-decoration: none;
 }
 .footer-p {
     width: 264px;
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
@@ -174,20 +218,21 @@ body {
 }
 .filter-btn{
     border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--cloud, #F4F4FD);
-    color: var(--iris, #4D5AE5);
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
+    color: var(--iris);
     text-align: center;
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
     cursor: pointer;
 }
 .filter-btn:hover {
-    background: var(--ocean, #404BBF);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    color: var(--white, #FFF);
+    background: var(--ocean);
+    box-shadow: 0px 2px 2px 0px var(--black-a-012), 0px 2px 1px 0px var(--black-a-008), 0px 3px 1px 0px var(--black-a-010);
+    color: var(--white);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -198,20 +243,20 @@ body {
 .porfolio-ul{
     list-style-type: none;
 }
-.portfolio-li img{
+.portfolio-img{
     width: 360px;
     height: 300px;
 }
 .content-header {
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
 }
 .content-body {
-    color: var(--slate, #434455);
+    color: var(--slate);
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
